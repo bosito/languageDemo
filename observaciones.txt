@@ -1,0 +1,33 @@
+**** sin terminar aparentemente. ***
+
+-Ya logre que la se actualize el json principal.
+
+* pero no carga el idioma seleccionado.
+* me marca un warnig que dice: --> Locale data for locale "es" not loaded. Plurals won't work correctly
+* Me hace falta leer esa parte de la doc.
+
+*** concluciones ***
+
+puede que esta libreria este mas chida pero me falta terminar su implementacion y ver como cambia 
+de idiomas de manera selectiva.
+
+ya la traduncion en teoria deberia ser mas facil pero falta hacer pruebas.
+
+{
+    "locales": [
+        "es",
+        "en",
+        "fr"
+    ],
+    "catalogs": [
+        {
+            "path": "src/locales/{locale}/messages",
+            "include": [
+                "./FirstView.js",
+                "./App.js"
+            ]
+        }
+    ],
+    "format": "minimal",
+    "compileNamespace": "es"
+}

@@ -5,18 +5,31 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "add-locale": "lingui add-locale",
+    "extract": "lingui extract",
+    "compile": "lingui compile"
   },
   "dependencies": {
+    "@lingui/react": "^3.12.1",
+    "babel-core": "^7.0.0-bridge.0",
     "expo": "~43.0.2",
     "expo-status-bar": "~1.1.0",
+    "i18next": "^21.5.2",
+    "make-plural": "^7.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
+    "react-native-toast-message": "^2.0.2",
     "react-native-web": "0.17.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.16.0",
+    "@lingui/cli": "^3.12.1",
+    "@lingui/macro": "^3.13.0",
+    "babel-plugin-macros": "^3.1.0",
+    "install": "^0.13.0",
+    "npm": "^8.1.3"
   },
   "private": true
 }
